@@ -1,4 +1,4 @@
-# web_shop
+# riverpod_files
 
 A new Flutter project.
 
