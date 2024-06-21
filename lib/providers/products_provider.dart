@@ -2,6 +2,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_files/models/product.dart';
 
 const List<Product> allProducts = [
+  // products array
   Product(
       id: "1",
       title: "Groovy Shorts",
@@ -45,9 +46,11 @@ const List<Product> allProducts = [
 ];
 
 final productsProvider = Provider((ref) {
+  // returns all products
   return allProducts;
 });
 
 final reducedProductsProdiver = Provider((ref) {
+  // returns products with price less than 50
   return allProducts.where((product) => product.price < 50).toList();
 });

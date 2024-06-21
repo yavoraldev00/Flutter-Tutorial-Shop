@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_files/screens/home/home_screen.dart';
 
-void main() {
+void main() { // provider scope allows for state management through the whole app
   runApp(const ProviderScope(child: MyApp()));
 }
 
